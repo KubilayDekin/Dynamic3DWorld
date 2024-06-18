@@ -70,7 +70,7 @@ namespace _Project.Scripts.TestScripts
 			}
 			else
 			{
-				currentFogText.text = "Fog Is <color=red>ON</color>";
+				currentFogText.text = "Fog Is <color=red>OFF</color>";
 			}
 		}
 	}
