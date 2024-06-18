@@ -67,19 +67,6 @@ namespace _Project.Scripts.DynamicEnvironmentLoader
 			detectionCollider.radius = visibleObjectRadius;
 		}
 
-		private void Update()
-		{
-			if (Input.GetKeyDown(KeyCode.T))
-			{
-				TestBusSystem.CallDisableDynamicLoad();
-			}
-
-			if (Input.GetKeyUp(KeyCode.Y))
-			{
-				TestBusSystem.CallEnableDynamicLoad();
-			}
-		}
-
 		private void OnTriggerEnter(Collider other)
 		{
 #if UNITY_EDITOR
