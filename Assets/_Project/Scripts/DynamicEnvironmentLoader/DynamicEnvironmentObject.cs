@@ -9,6 +9,8 @@ namespace _Project.Scripts.DynamicEnvironmentLoader
 	{
 		public GameObject modelToRender;
 
+		/// Disabling model to prevent execution order issues while 
+		/// <seealso cref="DynamicEnvironmentObject"> is working
 		private void Awake()
 		{
 			modelToRender.SetActive(false);

@@ -1,6 +1,5 @@
 ﻿using TMPro;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 namespace _Project.Scripts.TestScripts
 {

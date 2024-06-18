@@ -67,6 +67,11 @@ namespace _Project.Scripts.DynamicEnvironmentLoader
 			detectionCollider.radius = visibleObjectRadius;
 		}
 
+
+		/// Makes objects visible if they have colliders entering the transform
+		/// and their layers match the <param name="environmentObjectsLayerMask">. 
+		/// Applies to objects with the
+		/// <seealso cref="DynamicEnvironmentObject"> script attached.
 		private void OnTriggerEnter(Collider other)
 		{
 #if UNITY_EDITOR
@@ -81,6 +86,10 @@ namespace _Project.Scripts.DynamicEnvironmentLoader
 			}
 		}
 
+		/// Makes objects invisible if they have colliders entering the transform
+		/// and their layers match the <param name="environmentObjectsLayerMask">. 
+		/// Applies to objects with the
+		/// <seealso cref="DynamicEnvironmentObject"> script attached.
 		private void OnTriggerExit(Collider other)
 		{
 #if UNITY_EDITOR
