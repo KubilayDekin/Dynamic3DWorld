@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &301673123717629427
+--- !u!1 &1588913185732512301
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7280271649309042973}
-  - component: {fileID: 726767892784609191}
-  - component: {fileID: 5813252295343530053}
-  - component: {fileID: 830220242324422048}
+  - component: {fileID: 947680415464705458}
+  - component: {fileID: 6704707730995218969}
+  - component: {fileID: 8164856174421908537}
+  - component: {fileID: 5822218007995770921}
   m_Layer: 7
-  m_Name: TreeModel
+  m_Name: RockModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!4 &7280271649309042973
+--- !u!4 &947680415464705458
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301673123717629427}
+  m_GameObject: {fileID: 1588913185732512301}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2186217001014013416}
+  m_Father: {fileID: 3221976788240441153}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &726767892784609191
+--- !u!33 &6704707730995218969
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301673123717629427}
-  m_Mesh: {fileID: -469060277464940896, guid: 00ada2d395936fe4089b5fcb2f519b95, type: 3}
---- !u!23 &5813252295343530053
+  m_GameObject: {fileID: 1588913185732512301}
+  m_Mesh: {fileID: -2859724036688362590, guid: d48fdc7a14be275439446b67c627d81d, type: 3}
+--- !u!23 &8164856174421908537
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301673123717629427}
+  m_GameObject: {fileID: 1588913185732512301}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -62,8 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dd2d58f7c65a4a942936247c6cd0a55b, type: 2}
-  - {fileID: 2100000, guid: 1e70e5a8fc4cd8140b85bdad32d6772b, type: 2}
+  - {fileID: 2100000, guid: a6870fec01611b547b936fcacf143241, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,13 +84,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &830220242324422048
+--- !u!64 &5822218007995770921
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301673123717629427}
+  m_GameObject: {fileID: 1588913185732512301}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -104,10 +103,10 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 3489609858742283502, guid: 235067b80527a9041ac5686a0c99cd3a, type: 3}
---- !u!1 &1521319932559390546
+  m_Mesh: {fileID: -4164599509382416350, guid: 52386f3dbec71df48808085b99a4ca1d, type: 3}
+--- !u!1 &2881479668610909691
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,39 +114,52 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2186217001014013416}
-  - component: {fileID: 5428563547179957184}
-  - component: {fileID: 3782746790291157260}
+  - component: {fileID: 3221976788240441153}
+  - component: {fileID: 2520460755563544153}
+  - component: {fileID: 3354059365260544495}
   m_Layer: 7
-  m_Name: DefaultTree
+  m_Name: Rock1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2186217001014013416
+--- !u!4 &3221976788240441153
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1521319932559390546}
+  m_GameObject: {fileID: 2881479668610909691}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7280271649309042973}
+  - {fileID: 947680415464705458}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &5428563547179957184
+--- !u!114 &2520460755563544153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2881479668610909691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f825f8ff84102c24196a1cb15e5eb897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelToRender: {fileID: 1588913185732512301}
+--- !u!65 &3354059365260544495
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1521319932559390546}
+  m_GameObject: {fileID: 2881479668610909691}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -162,16 +174,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3782746790291157260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1521319932559390546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f825f8ff84102c24196a1cb15e5eb897, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  modelToRender: {fileID: 301673123717629427}
