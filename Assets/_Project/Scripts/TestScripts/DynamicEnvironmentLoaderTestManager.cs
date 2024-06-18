@@ -8,12 +8,15 @@ namespace _Project.Scripts.TestScripts
 	{
 		[Header("References")]
 		[SerializeField] private TextMeshProUGUI currentModeText;
+		[SerializeField] private TextMeshProUGUI currentFogText;
 
 		private bool isDynamicLoaderEnabled = true;
+		private bool isFogEnabled = true;
 
 		private void Start()
 		{
 			SetCurrentModeText();
+			SetCurrentFogText();
 		}
 
 		private void Update()
@@ -22,6 +25,14 @@ namespace _Project.Scripts.TestScripts
 			{
 				ArrangeDynamicLoader();
 				SetCurrentModeText();
+			}
+
+			if (Input.GetKeyDown(KeyCode.F))
+			{
+				RenderSettings.fog = !RenderSettings.fog;
+				isFogEnabled = RenderSettings.fog;
+
+				SetCurrentFogText();
 			}
 		}
 
@@ -48,6 +59,18 @@ namespace _Project.Scripts.TestScripts
 			else
 			{
 				currentModeText.text = "Dynamic Loader Is <color=red>OFF</color>";
+			}
+		}
+
+		private void SetCurrentFogText()
+		{
+			if (isFogEnabled)
+			{
+				currentFogText.text = "Fog Is <color=green>ON</color>";
+			}
+			else
+			{
+				currentFogText.text = "Fog Is <color=red>ON</color>";
 			}
 		}
 	}

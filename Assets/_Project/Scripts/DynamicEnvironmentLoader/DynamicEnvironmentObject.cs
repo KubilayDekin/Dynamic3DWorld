@@ -9,6 +9,11 @@ namespace _Project.Scripts.DynamicEnvironmentLoader
 	{
 		public GameObject modelToRender;
 
+		private void Awake()
+		{
+			modelToRender.SetActive(false);
+		}
+
 		#region Test Code
 #if UNITY_EDITOR
 		private void OnEnable()
