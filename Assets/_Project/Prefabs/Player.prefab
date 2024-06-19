@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBody: {fileID: 3433261832752785766}
-  mouseSensitivity: 400
+  gameSettings: {fileID: 11400000, guid: 4af4664a6d9351143a4dd5a70cbd0b89, type: 2}
 --- !u!114 &8552674779708194835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,8 +272,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 65
-  movementSpeed: 4
-  gravity: -9.81
+  gameSettings: {fileID: 11400000, guid: 4af4664a6d9351143a4dd5a70cbd0b89, type: 2}
   groundDistace: 0.4
 --- !u!143 &9140681625082693350
 CharacterController:
@@ -347,7 +346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6af02c119092954d90959296b61fad5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visibleObjectRadius: 80
+  gameSettings: {fileID: 11400000, guid: 4af4664a6d9351143a4dd5a70cbd0b89, type: 2}
   environmentObjectsLayerMask:
     serializedVersion: 2
     m_Bits: 128

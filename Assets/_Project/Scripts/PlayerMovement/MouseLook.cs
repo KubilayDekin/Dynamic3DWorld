@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using _Project.Scripts.Settings;
+using UnityEngine;
 
 namespace _Project.Scripts.PlayerMovement
 {
@@ -8,12 +9,15 @@ namespace _Project.Scripts.PlayerMovement
 		public Transform playerBody;
 
 		[Header("Rotation Settings")]
-		public float mouseSensitivity;
+		public GameSettings gameSettings;
 
+		private float lookRotationSpeed;
 		private float xRotation = 0f;
 
 		void Start()
 		{
+			lookRotationSpeed = gameSettings.lookRotationSpeed;
+
 			// Hiding and locking the cursor, these below can be changed due to preferences.
 			Cursor.lockState = CursorLockMode.Locked;
 			Cursor.visible = false;
@@ -21,8 +25,8 @@ namespace _Project.Scripts.PlayerMovement
 
 		private void Update()
 		{
-			float MouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-			float MouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+			float MouseX = Input.GetAxis("Mouse X") * lookRotationSpeed * Time.deltaTime;
+			float MouseY = Input.GetAxis("Mouse Y") * lookRotationSpeed * Time.deltaTime;
 
 			// Adjust vertical rotation and clamp it to avoid flipping
 			xRotation -= MouseY;

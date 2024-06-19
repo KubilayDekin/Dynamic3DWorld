@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using _Project.Scripts.Settings;
+using System.Collections;
 using UnityEngine;
 
 namespace _Project.Scripts.PlayerMovement
@@ -12,18 +13,20 @@ namespace _Project.Scripts.PlayerMovement
 
 		[Header("Movement Settings")]
 		[SerializeField]
-		private float movementSpeed;
-		[SerializeField]
-		private float gravity = -9.81f;
+		private GameSettings gameSettings;
 		[SerializeField]
 		private float groundDistace = 0.4f;
 
 		private CharacterController characterController;
 		private Vector3 velocity;
+		private float movementSpeed;
+		private float gravity;
 		private bool isGrounded;
 
 		private void Start()
 		{
+			gravity = gameSettings.gravity;
+			movementSpeed = gameSettings.movementSpeed;
 			characterController = GetComponent<CharacterController>(); // Cache the CharacterController component
 		}
 

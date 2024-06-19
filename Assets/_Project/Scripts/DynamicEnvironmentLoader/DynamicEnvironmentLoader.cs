@@ -1,7 +1,6 @@
-﻿using _Project.Scripts.TestScripts;
-using System;
+﻿using _Project.Scripts.Settings;
+using _Project.Scripts.TestScripts;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace _Project.Scripts.DynamicEnvironmentLoader
@@ -10,7 +9,7 @@ namespace _Project.Scripts.DynamicEnvironmentLoader
 	public class DynamicEnvironmentLoader : MonoBehaviour
 	{
 		[Header("Settings")]
-		[SerializeField] private float visibleObjectRadius;
+		[SerializeField] private GameSettings gameSettings;
 		[SerializeField] private LayerMask environmentObjectsLayerMask;
 
 		private SphereCollider detectionCollider;
@@ -41,7 +40,7 @@ namespace _Project.Scripts.DynamicEnvironmentLoader
 			{
 				yield return null;
 
-				Collider[] colliders = Physics.OverlapSphere(transform.position, visibleObjectRadius);
+				Collider[] colliders = Physics.OverlapSphere(transform.position, gameSettings.visibilityRange);
 
 				foreach (Collider col in colliders)
 				{
@@ -64,7 +63,7 @@ namespace _Project.Scripts.DynamicEnvironmentLoader
 		{
 			detectionCollider = GetComponent<SphereCollider>();
 
-			detectionCollider.radius = visibleObjectRadius;
+			detectionCollider.radius = gameSettings.visibilityRange;
 		}
 
 
