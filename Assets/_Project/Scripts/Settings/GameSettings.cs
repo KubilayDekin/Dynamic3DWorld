@@ -10,6 +10,7 @@ namespace _Project.Scripts.Settings
 		public float visibilityRange;
 		public float fogStartValue;
 		public float fogEndValue;
+		public Color fogColor;
 
 		[Header("Movement Settings")]
 		public float movementSpeed;

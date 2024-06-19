@@ -15,6 +15,7 @@ MonoBehaviour:
   visibilityRange: 50
   fogStartValue: 15
   fogEndValue: 45
+  fogColor: {r: 0.5882353, g: 0.64705884, b: 0.60784316, a: 1}
   movementSpeed: 4
   lookRotationSpeed: 400
   gravity: -9.81
